@@ -18,14 +18,12 @@ $ ./nthn N
 
 Nの部分には任意の正の実数を入力してください。
 
-## インストール方法
-- githubからクローンしてください。
 
-```$ git clone https://github.com/kiyo911/robosys2024.git```
 
 ## このコマンドのつかいかた
-- nthnコマンドが入っているディレクトリに移動し、実行権限を付与してから下記のように実行してください。
+- githubからnthnコマンドが入っているディレクトリをクローンします。そして、そのディレクトリに移動し、実行権限を付与してから実行してください。
 ```
+$ git clone https://github.com/kiyo911/robosys2024.git
 $ cd robosys2024
 $ chmod +x nthn
 $ ./nthn N
