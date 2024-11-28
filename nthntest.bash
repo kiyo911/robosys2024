@@ -18,6 +18,14 @@ out=$(seq 5 | ./nthn)
 [ "$?" = 1 ] || ng "$LINENO"
 [ "${out}" = "" ] || ng "$LINENO"
 
+out=$(echo | ./nthn)
+[ "$?" = 1 ] || ng "$LINENO"
+[ "${out}" = "" ] || ng "$LINENO"
+
+out=$(echo あ | ./nthn)
+[ "$?" = 1 ] || ng "$LINENO"
+[ "${out}" = "" ] || ng "$LINENO"
+
 [ "${res}" = 0 ] && echo OK
 exit $res
 
