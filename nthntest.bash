@@ -2,6 +2,7 @@
 # SPDX-FileCopyrightText: 2024 Hiromu Kiyokawa <hirosan315911@gmail.com>
 # SPDX-License-Identifier: BSD-3-Clause
 
+
 ng () {
 	echo ${1}行目がちがうよ
 	res=1
