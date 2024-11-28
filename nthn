@@ -1,6 +1,9 @@
 #!/usr/bin/python3
+# SPDX-FileCopyrightText: 2024 Hiromu Kiyokawa
+# SPDX-License-Identifier: BSD-3-clause
 
 import sys
+
 x = sys.argv[1]
 n = sys.argv[1]
 
