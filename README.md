@@ -39,5 +39,8 @@ Nの部分には任意の正の実数を入力してください。
 
 ## ライセンス
 - このソフトウェアパッケージは、３条項BSDライセンスの下、再頒布および使用が許可されます。
+- テストのコードは下記のスライド（CC-BY-SA 4.0 by Ryuichi Ueda）のものを,本人の許可を得て自身の著作としたものです。
+    - [ryuichiueda/my_slides/robosys_2024/lesson6.md]
+    - [ryuichiueda/my_slides/robosys_2024/lesson7.md]
 - ©️ 2024 Hiromu Kiyokawa
 
