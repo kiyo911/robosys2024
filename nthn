@@ -8,13 +8,13 @@ e, o = 0, 0
 
 for b in sys.stdin:
     a = b.strip()
-    x = int(a)
+    x = a
     if(int(a) % 2 == 0):
         print(a,"is even number")
-        e += x
+        e += int(x)
     elif(int(a) % 2 == 1):
         print(a,"is odd number")
-        o += x
+        o += int(x)
     else:
         print("Please enter integer")
 
