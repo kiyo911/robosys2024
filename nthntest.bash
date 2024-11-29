@@ -15,7 +15,7 @@ out=$(seq 5 | ./nthn)
 [ "$?" = 0 ] || ng "$LINENO"
 
 ###対応していない入力###
-out=$(./nthn l)
+out=$(echo l | ./nthn)
 [ "$?" = 1 ] || ng "$LINENO"
 [ "${out}" = "" ] || ng "$LINENO"
 
