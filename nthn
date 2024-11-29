@@ -4,10 +4,19 @@
 
 import sys
 
-x = sys.argv[1]
-n = sys.argv[1]
+e, o = 0, 0
 
-for a in range(int(n)):
-    ans = int(x) * n
+for b in sys.stdin:
+    a = b.strip()
+    x = int(a)
+    if(int(a) % 2 == 0):
+        print(a,"is even number")
+        e += x
+    elif(int(a) % 2 == 1):
+        print(a,"is odd number")
+        o += x
+    else:
+        print("Please enter integer")
 
-print(ans)
+print("The sum of even numbers is ", e) 
+print("The sum of odd numbers is ", o)
