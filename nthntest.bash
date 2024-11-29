@@ -10,15 +10,12 @@ ng () {
 
 res=0
 
-out=$(./nthn 1)
-[ "${out}" = 1 ] || ng "$LINENO"
-
-###無効な入力のテスト###
+###正しい入力###
 out=$(seq 5 | ./nthn)
-[ "$?" = 1 ] || ng "$LINENO"
-[ "${out}" = "" ] || ng "$LINENO"
+[ "$?" = 0 ] || ng "$LINENO"
 
-out=$(./nthn 1.5)
+###対応していない入力###
+out=$(./nthn l)
 [ "$?" = 1 ] || ng "$LINENO"
 [ "${out}" = "" ] || ng "$LINENO"
 
@@ -29,6 +26,10 @@ out=$(echo | ./nthn)
 out=$(echo あ | ./nthn)
 [ "$?" = 1 ] || ng "$LINENO"
 [ "${out}" = "" ] || ng "$LINENO"
+
+out=$(echo 阿 | ./nthn)
+[ "$?" = 1 ] || ng "$LINENO"
+[ "${out}" = "" ] || ng "$LNENO"
 
 [ "${res}" = 0 ] && echo OK
 exit $res
