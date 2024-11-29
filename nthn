@@ -4,7 +4,7 @@
 
 import sys
 
-e, o = 0, 0
+e, o, add = 0, 0, 0
 
 for b in sys.stdin:
     a = b.strip()
@@ -17,6 +17,8 @@ for b in sys.stdin:
         o += int(x)
     else:
         print("Please enter integer")
+    add += int(x)
 
 print("The sum of even numbers is ", e) 
 print("The sum of odd numbers is ", o)
+print("The sum of all number is ", add)
